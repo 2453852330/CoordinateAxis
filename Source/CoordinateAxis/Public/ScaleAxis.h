@@ -4,20 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "AxisBase.h"
-#include "MoveAxis.generated.h"
+#include "ScaleAxis.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class COORDINATEAXIS_API AMoveAxis : public AAxisBase
+class COORDINATEAXIS_API AScaleAxis : public AAxisBase
 {
 	GENERATED_BODY()
-
 public:
-	AMoveAxis();
+	AScaleAxis();
 
-	
+
 	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite)
 	UStaticMeshComponent * AxisX = nullptr;
 	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite)
@@ -26,13 +25,5 @@ public:
 	UStaticMeshComponent * AxisZ = nullptr;
 
 	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite)
-	UStaticMeshComponent * AxisXY = nullptr;
-	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite)
-	UStaticMeshComponent * AxisXZ = nullptr;
-	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite)
-	UStaticMeshComponent * AxisYZ = nullptr;
-
-	UPROPERTY(EditDefaultsOnly,BlueprintReadWrite)
-	UStaticMeshComponent * AxisXYZ = nullptr;
-
+	UStaticMeshComponent * Center = nullptr;
 };

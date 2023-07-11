@@ -5,9 +5,6 @@
 
 AMoveAxis::AMoveAxis()
 {
-	FakeRoot = CreateDefaultSubobject<USceneComponent>(TEXT("FakeRoot"));
-	RootComponent = FakeRoot;
-
 	AxisX = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("AxisX"));
 	AxisX->SetupAttachment(RootComponent);
 	AxisY = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("AxisY"));

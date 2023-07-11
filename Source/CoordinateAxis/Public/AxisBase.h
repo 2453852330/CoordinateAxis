@@ -15,6 +15,10 @@ public:
 	// Sets default values for this actor's properties
 	AAxisBase();
 
+	/** fake root component */
+	UPROPERTY()
+	USceneComponent * FakeRoot = nullptr;
+	
 	/** the actor which is control by axis */
 	UPROPERTY(BlueprintReadWrite,meta=(ExposeOnSpawn=true))
 	AActor * BindActor = nullptr;
