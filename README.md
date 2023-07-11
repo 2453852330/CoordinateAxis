@@ -1,7 +1,7 @@
 # CoordinateAxis
 ue4.26 runtime coordinate axis system
 
-NOTE:
+## how to use :
 
 ```
 before use this plugin , you need add a custom collision object;
@@ -14,5 +14,9 @@ Collision Presets: Custom
 Collision Enabled: Query Only
 Object Type: CoordinateAxis
 Collision Responses: Set All To Ignore
+```
+
+```
+Get helper from BP_AxisChecker + BP_PlayerContoller_DebugAxis
 ```
 
