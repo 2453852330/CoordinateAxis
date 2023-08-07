@@ -19,4 +19,6 @@ Collision Responses: Set All To Ignore
 ```
 Get helper from BP_AxisChecker + BP_PlayerContoller_DebugAxis
 ```
+## note :
+不要在 Selected Viewport 模式下测试,由于界面尺寸获取错误,会导致计算异常;
 
