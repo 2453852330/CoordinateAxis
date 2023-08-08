@@ -20,5 +20,5 @@ Collision Responses: Set All To Ignore
 Get helper from BP_AxisChecker + BP_PlayerContoller_DebugAxis
 ```
 ## note :
-不要在 Selected Viewport 模式下测试,由于界面尺寸获取错误,会导致计算异常;
+注意InputMode的设置,如果Mouse的状态是capturing,那么获取到的MousePos是定值,会导致出错;
 
